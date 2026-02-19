@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+/* Indian Railway Government Theme Colors */
+:root {
+  --ir-primary: #003d82;      /* Indian Railway Blue */
+  --ir-secondary: #d32f2f;    /* Indian Railway Red */
+  --ir-accent: #ff9800;       /* Orange/Amber for alerts */
+  --ir-success: #2e7d32;      /* Green for success */
+  --ir-warning: #f57c00;      /* Warning orange */
+  --ir-danger: #c62828;       /* Danger red */
+  --ir-bg-primary: #f5f5f5;   /* Light gray background */
+  --ir-bg-secondary: #ffffff; /* White background */
+  --ir-text-primary: #212121; /* Dark text */
+  --ir-text-secondary: #757575; /* Gray text */
+  --ir-border: #e0e0e0;       /* Border color */
+}
+
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--ir-bg-primary);
+  color: var(--ir-text-primary);
+}
+
+/* Government website aesthetic */
+.gov-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Time Picker Styling */
+.react-time-picker {
+  display: block !important;
+  width: 100%;
+}
+
+.react-time-picker__wrapper {
+  border: 1px solid #d1d5db !important;
+  border-radius: 0.375rem !important;
+  padding: 0.5rem 0.75rem !important;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: white;
+}
+
+.react-time-picker__wrapper:focus-within {
+  outline: 2px solid var(--ir-primary) !important;
+  outline-offset: 0px;
+  border-color: transparent !important;
+}
+
+.react-time-picker__inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.react-time-picker__inputGroup__input {
+  border: none !important;
+  outline: none !important;
+  padding: 0.25rem;
+  min-width: 1.5rem;
+}
+
+.react-time-picker__inputGroup__divider {
+  padding: 0 0.25rem;
+}
+
+.react-time-picker__clock {
+  border: 1px solid var(--ir-border) !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1) !important;
+}
+
+.react-clock__face {
+  border-color: var(--ir-primary) !important;
+}
+
+.react-clock__hand__body {
+  background-color: var(--ir-primary) !important;
+}
+
+.react-clock__mark__body {
+  background-color: var(--ir-text-secondary) !important;
+}
+
+.react-time-picker__button svg {
+  stroke: var(--ir-primary) !important;
+  width: 16px;
+  height: 16px;
+}
+
+/* Professional buttons */
+.btn-primary {
+  background-color: var(--ir-primary);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #002b5c;
+}
+
+.btn-secondary {
+  background-color: var(--ir-secondary);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #b71c1c;
+}
+
+/* Custom Animations */
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.3s ease-out;
+}
+
+/* Pulse animation delays */
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+/* Fade in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
