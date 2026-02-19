@@ -9,7 +9,7 @@ const locomotiveSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-locomotiveSchema.index({ locomotiveNo: 1 });
+// locomotiveSchema.index({ locomotiveNo: 1 });
 
 const Locomotive = mongoose.model('Locomotive', locomotiveSchema);
 export default Locomotive;

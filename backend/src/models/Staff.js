@@ -14,7 +14,7 @@ const staffSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-staffSchema.index({ employeeId: 1 });
+// staffSchema.index({ employeeId: 1 });
 staffSchema.index({ name: 1 });
 staffSchema.index({ status: 1 });
 staffSchema.index({ staffType: 1 });

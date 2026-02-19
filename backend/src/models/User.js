@@ -26,10 +26,10 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-userSchema.index({ employeeId: 1 });
-userSchema.index({ email: 1 });
-userSchema.index({ isVerified: 1 });
-userSchema.index({ status: 1 });
+// userSchema.index({ employeeId: 1 });
+// userSchema.index({ email: 1 });
+// userSchema.index({ isVerified: 1 });
+// userSchema.index({ status: 1 });
 
 // Remove password from JSON output
 userSchema.methods.toJSON = function () {
